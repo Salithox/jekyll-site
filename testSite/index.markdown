@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+<ul>
+    {% for item in site.test-collections.games %}
+    <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
