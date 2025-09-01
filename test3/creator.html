@@ -1,0 +1,28 @@
+---
+layout: default
+title: creator
+---
+<div class="item1">
+  <h1>Creators</h1>
+</div>
+<div class="item3">
+  <ul>
+    {% for creator in site.creator %}
+      <li>
+        <h2><a href="{{ creator.url }}">{{ creator.name }}</a></h2>
+        <h3>{{ creator.job }}</h3>
+        <p>{{ creator.content | markdownify }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="item2">
+  placeholder
+</div>
+<div class="item4">
+  placeholder
+</div>
+<div class="item5">
+  placeholder
+</div>

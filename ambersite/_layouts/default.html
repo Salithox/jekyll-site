@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script>
+            window.addEventListener("load", (event) => {
+            new cursoreffects.fairyDustCursor();
+            });
+        </script>
+</head>
+<body>
+    <main class="basegrid">
+        <header class="header">
+            {% include header.html %}
+        </header>
+        <nav class="mainnav">
+            {%include sitenav.html%}
+        </nav>
+        <section class ="main">
+        {{content}}
+        </section>
+        <footer class="footer">
+            {% include footer.html %}
+        </footer>
+    </main>
+</body>
+</html>

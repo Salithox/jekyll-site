@@ -1,0 +1,61 @@
+body {
+  background-color: #000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "menu main main main main right" "menu footer footer footer footer footer";
+  gap: 10px;
+  background-color: rgb(153, 0, 0);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #00c8ff;
+  color: #000;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.current {
+  background-color: rgb(36, 0, 134);
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: pink;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: yellow;
+}
+
+/*# sourceMappingURL=styles.css.map */

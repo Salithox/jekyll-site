@@ -1,0 +1,20 @@
+
+    <a href="/">Home</a>
+    <a href="/sewing/">Sewing</a>
+    <a href="/blog.html/">Blog</a>
+
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{post.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for item in site.sewing %}
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
