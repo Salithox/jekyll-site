@@ -1,5 +1,8 @@
 body {
-  background-color: #000;
+  background-color: #000000;
+  margin-left: 20px;
+  margin-right: 20px;
+  // padding-left: 20px;
 }
 
 .grid-container {
@@ -14,12 +17,14 @@ body {
 }
 
 .grid-container > div {
-  background-color: #00c8ff;
-  color:#000;
+  background-color: #000000;
+  border-color:chartreuse ;
+  color:#00d200;
   padding: 10px;
   font-size: 20px;
   text-align: center;
 }
+
 
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
@@ -28,7 +33,7 @@ body {
 .item5 { grid-area: footer; }
 
 .current {
-  background-color: rgb(36, 0, 134);
+  background-color: rgba(147, 144, 144, 0.437);
 }
 
 a:link {
@@ -36,7 +41,7 @@ a:link {
 }
 
 a:visited {
-  color: pink;
+  color: rgb(238, 0, 255);
 }
 
 a:hover {
@@ -45,4 +50,17 @@ a:hover {
 
 a:active {
   color: yellow;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    line-height: 30px;
+}
+nav a {
+    text-decoration: none;
+}
+nav li.active a {
+    color: #ffffff;
 }
