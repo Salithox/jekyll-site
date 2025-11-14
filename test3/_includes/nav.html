@@ -8,7 +8,7 @@
       {% endif %}
       {% if link.subnav %}
         <li class="dropdown {{ class }}">
-          <a href="{{ site.link}}{{site.baselink}}{{link.link}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{{ link.name }} <span class="caret"></span></a>
+          <a href="{{ site.link }}{{ site.baselink }}{{ link.link }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ link.name }} <span class="caret"></span> </a>
           <ul class="dropdown-menu">
             {% for subnav in link.subnav %}
               {% if subnav.name == 'separator' %}
