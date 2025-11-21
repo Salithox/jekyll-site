@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+# menu: About
 ---
 <div class="item1">
     About Me!

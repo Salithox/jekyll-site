@@ -1,0 +1,16 @@
+header:
+  - url: /
+    title: Home
+    identifier: Home
+  - url: /about.html
+    title: About
+    identifier: About
+  - url: /blog.html
+    title: Blog
+    identifier: mBlog
+  - url: /blog2.html
+    title: Blog 2
+    identifier: sBlog
+  - url: /creator.html
+    title: creator
+    identifier: creator
