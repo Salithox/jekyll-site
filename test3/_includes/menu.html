@@ -1,13 +1,19 @@
 {% if menu %}
 <ul>
 {% for item in menu %}
+<div class="dropdown">
+  <button class="dropbtn">
   <li class="menu-item-{{ loop.index }}">
     <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-    {% if item.children %}
-      {% assign menu = item.children %}
-      {% include menu.html %}
-    {% endif %}
+  </button>
+      <div class="sub-menu-item-">
+      {% if item.children %}
+        {% assign menu = item.children %}
+        {% include menu.html %}
+      {% endif %}
+    </div>
   </li>
+</div>
 {% endfor %}
 </ul>
 {% endif %}

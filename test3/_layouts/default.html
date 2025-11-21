@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    <nav>
-    {# {% include nav_copy.html %} #}
-    </nav>
+    <header>
+      <nav class="navbar">
+        {% assign menu = site.menus.header %}
+        {% include menu.html %}
+      </nav>
+    </header>
     <div class="grid-container">
         {{ content }}
     </div>
