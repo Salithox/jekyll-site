@@ -1,0 +1,27 @@
+.basegrid {
+    display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'left main main main main right'
+            'footer footer footer footer footer footer';
+        grid-template-rows: 1fr 1fr 7fr 1fr; 
+        height: 100vh;
+        max-width: 80%;
+}
+
+.main {
+    grid-area: main;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {   
+    grid-area: footer;
+}
+
+.mainnav {  
+    grid-area: nav;
+}

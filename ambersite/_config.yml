@@ -34,12 +34,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-#collections
-collections:
-  test_collection:
-    output: true
-    permalink: /test_collection/:path/
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -59,3 +53,8 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  sewing:
+    output: true
+    permalink: /:collection/:name 

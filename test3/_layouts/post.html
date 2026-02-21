@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+  <div class="item1">
+
+  <h1>{{ page.title }}</h1>
+  </div>
+  <div class="item2">
+  <p>{{ page.date | date_to_string }}
+    {% assign creator = site.creator | where: 'short_name', page.creator | first %}
+    {% if creator %}
+      - <a href="{{ creator.url }}">{{ creator.name }}</a>
+    {% endif %}
+
+  </p>
+  </div>
+  <div class="item3">
+  {{ content }}
+  </div>
+  <div class="item4">
+    placeholder
+  </div>
+  <div class="item5">
+    place holder
+  </div>
+</div>

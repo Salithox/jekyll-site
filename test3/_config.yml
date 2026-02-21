@@ -1,0 +1,25 @@
+collections:
+  posts2:
+    output: true
+  creator:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "creator"
+    values:
+      layout: "creator"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+- jekyll-menus

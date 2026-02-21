@@ -1,0 +1,17 @@
+# nav:
+  - name: Home
+    link: /
+  - name: About
+    link: /about.html
+  - name: Blog
+    link: /blog.html
+  - name: blog 2
+    link: /blog2.html
+  - name: creator
+    link: /creator.html
+    subnav:
+      - name: Amber
+        link: /creator/amber.html
+      - name: separator
+      - name: Brian
+        link: /creator/brian.html
